@@ -1,6 +1,6 @@
 import argparse
-from scraper import scrape_emails
-from storage import save_csv
+from src.scraper import scrape_emails
+from src.storage import save_csv
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -34,8 +34,15 @@ def main():
 
     urls = load_urls(args.input_file)
 
+    if not urls:
+        return
+
     rows = scrape_emails(urls)
 
+    if not rows:
+        print("No emails found. CSV file was not created")
+        return
+    
     print(f"Total emails found: {len(rows)}")
 
     save_csv(args.output_file, rows)

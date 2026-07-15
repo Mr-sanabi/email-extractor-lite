@@ -1,7 +1,7 @@
 import re
 
 from bs4 import BeautifulSoup
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 
 def extract_emails(html):
     results = []
@@ -53,6 +53,7 @@ def extract_contact_links(html, base_url):
 
     keywords = ["contact", "contact-us", "contacts", "about", "impressum"]
 
+    parsed = urlparse(base_url).netloc
     for link in links:
         href = link.get("href", "")
         link_text = link.get_text(" ", strip=True)
@@ -75,9 +76,11 @@ def extract_contact_links(html, base_url):
 
         if is_contact_link:
             full_url = urljoin(base_url, href)
+            full_parsed = urlparse(full_url).netloc
 
-            if full_url not in seen_links:
+            if full_parsed == parsed and full_url not in seen_links:
                 seen_links.add(full_url)
                 results.append(full_url)
+
 
     return results

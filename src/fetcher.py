@@ -11,16 +11,12 @@ def fetch_page(url):
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     }
     try:
-        response = requests.get(url, headers=headers)
+        response = requests.get(url, headers=headers, timeout=10)
+        response.raise_for_status()
         response.encoding = "utf-8"
-    except requests.exceptions.RequestException:
-        print("Request error")
+    except requests.exceptions.RequestException as error:
+        print(f"Request error: {error}")
         return None
-
-    if response.status_code != 200:
-        print("Invalid status code")
-        return None
-
 
     return response.text
 

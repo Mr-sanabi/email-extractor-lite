@@ -1,6 +1,5 @@
-
-from fetcher import fetch_page
-from extractor import extract_emails, extract_contact_links
+from src.fetcher import fetch_page
+from src.extractor import extract_emails, extract_contact_links
 from datetime import datetime
 
 def scrape_emails(urls):
@@ -62,4 +61,4 @@ def scrape_emails(urls):
                 
                     all_rows.append(row)
 
-        return all_rows
+    return all_rows
