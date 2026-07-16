@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="440" viewBox="0 0 1400 440" role="img" aria-labelledby="title desc">
+  <title id="title">Email Extractor Lite</title>
+  <desc id="desc">Project banner showing a URL to email extraction and CSV export workflow.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1722"/>
+      <stop offset="1" stop-color="#101b25"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4da3ff"/>
+      <stop offset="0.55" stop-color="#30d17b"/>
+      <stop offset="1" stop-color="#f4b860"/>
+    </linearGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" fill="none" stroke="#233342" stroke-width="1" opacity=".22"/>
+    </pattern>
+  </defs>
+
+  <rect width="1400" height="440" rx="28" fill="url(#bg)"/>
+  <rect width="1400" height="440" rx="28" fill="url(#grid)"/>
+  <rect x="28" y="24" width="1344" height="5" rx="2.5" fill="url(#line)"/>
+
+  <text x="88" y="105" fill="#8eb6d9" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="3">PYTHON WEB DATA EXTRACTION</text>
+  <text x="88" y="164" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="47" font-weight="700">Email Extractor Lite</text>
+  <text x="88" y="205" fill="#79bdff" font-family="Arial, Helvetica, sans-serif" font-size="21">Public emails from provided URLs and same-domain contact pages.</text>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" text-anchor="middle">
+    <rect x="88" y="255" width="175" height="46" rx="23" fill="#111d28" stroke="#314557"/>
+    <text x="175.5" y="284" fill="#ffffff">Requests</text>
+    <rect x="279" y="255" width="215" height="46" rx="23" fill="#111d28" stroke="#314557"/>
+    <text x="386.5" y="284" fill="#ffffff">Beautiful Soup</text>
+    <rect x="510" y="255" width="155" height="46" rx="23" fill="#111d28" stroke="#314557"/>
+    <text x="587.5" y="284" fill="#ffffff">pytest</text>
+  </g>
+
+  <rect x="790" y="72" width="520" height="296" rx="26" fill="#122431" stroke="#34505f"/>
+
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <rect x="828" y="118" width="112" height="72" rx="14" fill="#102b45" stroke="#4da3ff"/>
+    <text x="884" y="148" fill="#75bdff" font-size="15" font-weight="700">URLS</text>
+    <text x="884" y="170" fill="#d5e7f5" font-size="12">input list</text>
+
+    <text x="962" y="161" fill="#738594" font-size="31">→</text>
+
+    <rect x="990" y="118" width="112" height="72" rx="14" fill="#103520" stroke="#30d17b"/>
+    <text x="1046" y="148" fill="#55df8f" font-size="15" font-weight="700">EXTRACT</text>
+    <text x="1046" y="170" fill="#d5e7f5" font-size="12">text + mailto</text>
+
+    <text x="1124" y="161" fill="#738594" font-size="31">→</text>
+
+    <rect x="1152" y="118" width="120" height="72" rx="14" fill="#3a2a16" stroke="#f4a340"/>
+    <text x="1212" y="148" fill="#ffc46b" font-size="15" font-weight="700">EXPORT</text>
+    <text x="1212" y="170" fill="#d5e7f5" font-size="12">CSV rows</text>
+  </g>
+
+  <rect x="828" y="222" width="444" height="98" rx="15" fill="#0c1019" stroke="#283746"/>
+  <circle cx="858" cy="255" r="6" fill="#30d17b"/>
+  <text x="879" y="261" fill="#a9becf" font-family="Arial, Helvetica, sans-serif" font-size="15">same-domain contact discovery</text>
+  <text x="1238" y="261" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="end">safe scope</text>
+  <circle cx="858" cy="291" r="6" fill="#4da3ff"/>
+  <text x="879" y="297" fill="#a9becf" font-family="Arial, Helvetica, sans-serif" font-size="15">automated tests</text>
+  <text x="1238" y="297" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="end">5</text>
+</svg>
